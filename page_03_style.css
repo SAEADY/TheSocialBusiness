@@ -1,0 +1,163 @@
+body {
+    color: #fbf0c2;
+    background-color: #0e0e0e;
+    font-size: 20px;
+    font-family: "field-gothic-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+
+h1 {
+    font-size: 4em;
+}
+
+
+.title h1 {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.nav {
+    margin-top: 0;
+    top: 0;
+    border-bottom: 2px solid #52d99a;
+    
+}
+
+.home {
+    margin-left: 20px;
+    width: 80px;
+    font-size: 20px;
+}
+
+
+
+.nav a {
+
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+
+
+
+.nav a:hover {
+    transform: scale(1.2); 
+    color: #52d99a;
+  }
+
+
+
+.info {
+    width: 80%;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+
+.mental_page {
+    display: flex;
+    border: 4px solid #52d99a;
+    border-radius: 20px;
+    height: 400px;
+    width: 60%;
+    margin-left: 40px;
+}
+
+.mental_page_text {
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.mental_page_image {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    left: 700px;
+    top:570px;
+    
+  }
+  
+.mental_page_image img {
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.mental_page_image img.hover_image {
+    opacity: 0;
+    animation: fadeIn 7s infinite linear;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.influence_page {
+    display: flex;
+    position: relative;
+    left: 100px ;
+    top: 80px;
+    margin-bottom: 200px;
+}
+
+.influence_page_text {
+    width: 30%;
+    margin-top: 50px;
+}
+
+.influence_page img {
+    width: 70%;
+    height: 100%;
+    margin-right: 200px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    .title {
+        font-size: 3em; 
+    }
+
+    .info {
+        font-size: 24px; 
+    }
+
+    .mental_page {
+        flex-direction: column; 
+        height: auto; 
+        width: 90%; 
+        margin-left: 5%; 
+        height: 50vh;
+    }
+
+    .mental_page_text {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .mental_page_image {
+        position: relative; 
+        width: 50%; 
+        height: auto; 
+        margin: 20px auto; 
+        left: auto; 
+        top: auto; 
+    }
+}
+
+ 

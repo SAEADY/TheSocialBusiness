@@ -1,0 +1,174 @@
+body {
+    color: #fbf0c2;
+    background-color: #0e0e0e;
+    font-size: 32px;
+    font-family: "field-gothic-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+.title {
+    font-size: 6em;
+    margin-left: 40px;
+    margin-top:40px;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: 4em;
+}
+
+
+.title h1 {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.nav {
+    margin-top: 0;
+    top: 0;
+    border-bottom: 2px solid #52d99a;
+    
+}
+
+.home {
+    margin-left: 20px;
+    width: 80px;
+    font-size: 20px;
+}
+
+
+
+.nav a {
+
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+
+
+
+.nav a:hover {
+    transform: scale(1.2); 
+    color: #52d99a;
+  }
+
+
+
+.info {
+    width: 80%;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.fake_page {
+    display: flex;
+    border: 4px solid #52d99a;
+    border-radius: 20px;
+    height: 50vh;
+    width: 90vw;
+    margin-left: 40px;
+}
+.fake_page_text {
+    width: 40%;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+.fake_page_image {
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin:0;
+
+}
+
+.graph {
+    margin-top: 15vh;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.icon {
+    width: 120px; 
+    height: 120px; 
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.icon svg {
+    width: 100%; /* Ensure the SVG scales to fit the icon container */
+    height: 100%; /* Ensure the SVG scales to fit the icon container */
+}
+
+
+.icon.red img {
+    filter: hue-rotate(210deg); /* Change the hue to red */
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    .title {
+        font-size: 4em; 
+    }
+
+    .info {
+        font-size: 24px; 
+    }
+
+    .fake_page {
+        flex-direction: column; 
+        height: 50vh; 
+        width: 90%; 
+        margin-left: 5%; 
+    }
+
+    .fake_page_text {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .fake_page_image {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .graph {
+        margin-top:10vh;
+    }
+
+    .icon {
+        width: 100px; 
+        height: 100px; 
+    }
+
+    .icon-container {
+        justify-content: center; 
+    }
+}
+
+ 
